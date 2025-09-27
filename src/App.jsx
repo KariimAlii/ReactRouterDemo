@@ -15,6 +15,27 @@ const router = createBrowserRouter([
         ]
     }
 ])
+
+// In case of multiple layouts you can use configure it like:
+// const router = createBrowserRouter([
+//     {
+//         path: '/',
+//         element: <Layout/>,
+//         errorElement: <Error/>,
+//         children: [
+//             { path: '/' , element: <Home/> },
+//             { path: '/products' , element: <Products/> },
+//         ]
+//     },
+//     {
+//         path: '/admin-dashboard',
+//         element: <Layout2/>,
+//         children: [
+//             { path: '/admin-dashboard/orders' , element: <Orders/> },
+//         ]
+//     }
+// ])
+
 export default function App() {
     return <RouterProvider router={router}/>;
 }
