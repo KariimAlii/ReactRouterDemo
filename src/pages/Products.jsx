@@ -1,11 +1,25 @@
-﻿export default function Products() {
+﻿import {Link} from "react-router-dom";
+
+export default function Products() {
     return (
         <>
             <h1>Products Page</h1>
             <ul>
-                <li>Product1</li>
-                <li>Product2</li>
-                <li>Product3</li>
+                <li>
+                    <Link to="/products/1">
+                        Product 1
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/products/2">
+                        Product 2
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/products/3">
+                        Product 3
+                    </Link>
+                </li>
             </ul>
         </>
 
