@@ -5,9 +5,10 @@ import Layout from "./pages/Layout.jsx";
 import Error from "./pages/Error.jsx";
 import ProductDetail from "./pages/ProductDetail.jsx";
 
+//! if a path starts with '/' => absolute path
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/admin-dashboard",
         element: <Layout />,
         errorElement: <Error/>,
         children: [
