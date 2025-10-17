@@ -6,6 +6,7 @@ export default function ProductDetail() {
     const productId = params.productId;
 
     return (
+        //! Issue : in this case the (back to index) returns you to the home page !!
         <>
             <h1>Product {productId} Details!</h1>
             <Link to="..">
