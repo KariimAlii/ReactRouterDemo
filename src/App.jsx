@@ -3,6 +3,7 @@ import Home from "./pages/Home.jsx";
 import Products from "./pages/Products.jsx";
 import Layout from "./pages/Layout.jsx";
 import Error from "./pages/Error.jsx";
+import ProductDetail from "./pages/ProductDetail.jsx";
 
 const router = createBrowserRouter([
     {
@@ -11,7 +12,8 @@ const router = createBrowserRouter([
         errorElement: <Error/>,
         children: [
             { path: '/', element: <Home /> },
-            { path: '/products', element: <Products /> }
+            { path: '/products', element: <Products /> },
+            { path: '/products/product-1', element: <ProductDetail /> }
         ]
     }
 ])
