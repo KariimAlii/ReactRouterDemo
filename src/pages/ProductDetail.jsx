@@ -7,6 +7,7 @@ export default function ProductDetail() {
 
     return (
         //! Issue : in this case the (back to index) returns you to the home page !!
+        //! ".." is a relative path that resolves relative to the routes definitions
         <>
             <h1>Product {productId} Details!</h1>
             <Link to="..">

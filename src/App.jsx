@@ -9,13 +9,13 @@ import ProductDetail from "./pages/ProductDetail.jsx";
 //! Routed that don't start with '/' like: 'products' => relative path
 const router = createBrowserRouter([
     {
-        path: "/admin-dashboard",
+        path: "/admin-dashboard",                           //! level 1
         element: <Layout />,
         errorElement: <Error/>,
         children: [
-            { path: '', element: <Home /> },
-            { path: 'products', element: <Products /> },
-            { path: 'products/:productId', element: <ProductDetail /> }
+            { path: '', element: <Home /> },               //! level 2
+            { path: 'products', element: <Products /> },   //! level 2
+            { path: 'products/:productId', element: <ProductDetail /> }  //! level 2
         ]
     }
 ])
