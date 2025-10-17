@@ -7,13 +7,15 @@ import ProductDetail from "./pages/ProductDetail.jsx";
 
 //! if a path starts with '/' => absolute path
 //! Routed that don't start with '/' like: 'products' => relative path
+//!
+//! Index route represents the default route if there is no sub-route and currently the path is active
 const router = createBrowserRouter([
     {
         path: "/admin-dashboard",                           //! level 1
         element: <Layout />,
         errorElement: <Error/>,
         children: [
-            { path: '', element: <Home /> },               //! level 2
+            { index: true, element: <Home /> },               //! level 2
             { path: 'products', element: <Products /> },   //! level 2
             { path: 'products/:productId', element: <ProductDetail /> }  //! level 2
         ]
