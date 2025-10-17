@@ -8,7 +8,7 @@ export default function ProductDetail() {
     return (
         <>
             <h1>Product {productId} Details!</h1>
-            <Link to="/products">
+            <Link to="..">
                 Back to Index
             </Link>
         </>

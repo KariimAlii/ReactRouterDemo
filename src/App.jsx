@@ -6,15 +6,16 @@ import Error from "./pages/Error.jsx";
 import ProductDetail from "./pages/ProductDetail.jsx";
 
 //! if a path starts with '/' => absolute path
+//! Routed that don't start with '/' like: 'products' => relative path
 const router = createBrowserRouter([
     {
         path: "/admin-dashboard",
         element: <Layout />,
         errorElement: <Error/>,
         children: [
-            { path: '/', element: <Home /> },
-            { path: '/products', element: <Products /> },
-            { path: '/products/:productId', element: <ProductDetail /> }
+            { path: '', element: <Home /> },
+            { path: 'products', element: <Products /> },
+            { path: 'products/:productId', element: <ProductDetail /> }
         ]
     }
 ])
